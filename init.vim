@@ -1,14 +1,15 @@
 source $HOME/.config/nvim/plug-config/coc.vim
 " source $HOME/.config/nvim/plug-config/neovide.vim
 source $HOME/.config/nvim/plug-config/signify.vim
-source $HOME/.config/nvim/plug-config/start-screen.vim
+" source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim
 source $HOME/.config/nvim/plug-config/vimtex.vim
 source $HOME/.config/nvim/plug-config/ultisnips.vim
 source $HOME/.config/nvim/plug-config/treesitter.vim
 source $HOME/.config/nvim/plug-config/colorschemes.vim
-" source $HOME/AppData/Local/nvim/plug-config/dashboard.vim
+source $HOME/.config/nvim/plug-config/dashboard.vim
+" source $HOME/.config/nvim/plug-config/goyo.vim
 
 set runtimepath ^=~.vim runtimepath +=~/.vim/after
 let &packpath = &runtimepath
@@ -69,7 +70,6 @@ call vundle#begin()
 	Plugin 'junegunn/fzf.vim'										" --- fzf.vim
 	Plugin 'mhinz/vim-signify'										" --- signify
 	Plugin 'tpope/vim-rhubarb'										" --- rhubarb
-	Plugin 'mhinz/vim-startify'										" --- startify
 	Plugin 'tpope/vim-surround'										" --- surround
 	Plugin 'github/copilot.vim'										" --- copilot
 	Plugin 'honza/vim-snippets'										" --- vim-snippets
@@ -80,7 +80,7 @@ call vundle#begin()
 	Plugin 'joshdick/onedark.vim'									" --- onedark
 	Plugin 'tpope/vim-commentary'									" --- commentary
 	Plugin 'frazrepo/vim-rainbow'									" --- rainbow parentheses
-	" Plugin 'glepnir/dashboard-nvim'									" --- dashboard-nvim
+	Plugin 'glepnir/dashboard-nvim'									" --- dashboard-nvim
 	Plugin 'ryanoasis/vim-devicons'									" --- devicons
 	Plugin 'vim-syntastic/syntastic'								" --- syntastic
 	Plugin 'vim-airline/vim-airline'								" --- vim-airline
@@ -91,10 +91,12 @@ call vundle#begin()
 	Plugin 'vim-airline/vim-airline-themes'							" --- vim-airline-themes
 	Plugin 'dracula/vim', {'name':'dracula'}						" --- dracula
 	Plugin 'junegunn/fzf', {'do': ':FZFInstall'}					" --- fzf
+	Plugin 'mhinz/vim-startify', {'branch':'center'}				" --- startify
 	Plugin 'neoclide/coc.nvim', {'branch': 'release'}				" --- coc.nvim
 	Plugin 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}	" --- treesitter
 	Plugin 'rafi/awesome-vim-colorschemes'							" --- awesome-vim-colorscheme
-	Plugin 'junegunn/goyo.vim'
+	Plugin 'junegunn/goyo.vim'										" --- goyo
+	Plugin 'jremmen/vim-ripgrep'									" --- ripgrep
 
 call vundle#end()
 

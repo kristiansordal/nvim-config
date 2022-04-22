@@ -5,6 +5,8 @@ set conceallevel=1
 let g:tex_conceal='abdmg'
 
 " --- PDF viewer
-let g:vimtex_view_general_viewer = 'SumatraPDF'
+let g:vimtex_view_general_viewer = 'zathura'
 let g:vimtex_view_general_options
   \ = '-reuse-instance -forward-search @tex @line @pdf'
+
+let maplocalleader="\<Space>"
